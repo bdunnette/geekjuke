@@ -1,0 +1,33 @@
+{
+  "name": "feed",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "fetch": {
+      "isStatic": true,
+      "accepts": [{
+        "arg": "id",
+        "type": "string",
+        "required": true,
+        "description": ""
+      }],
+      "returns": {
+        "arg": "feed",
+        "type": "object",
+        "root": "true"
+      },
+      "description": "",
+      "http": [{
+        "path": "/fetch",
+        "verb": "get"
+      }]
+    }
+  }
+}

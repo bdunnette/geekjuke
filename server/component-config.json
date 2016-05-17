@@ -1,0 +1,13 @@
+{
+  "loopback-component-explorer": {
+    "mountPath": "/explorer"
+  },
+  "loopback-component-fixtures": {
+    "loadFixturesOnStartup": true,
+    "environments": [
+      "test",
+      "development"
+    ],
+    "fixturesPath": "/server/fixtures/"
+  }
+}
